@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Luanda Security</title>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+            <!-- Nav -->
+            <nav class="main-nav">
+                <a href="/index.html" onclick="openHome()"><img src="img/logo.jpg" alt="Luanda Security" class="logo"></a>
+
+                <ul class="main-menu">
+                    <li id="btn0" onclick="openHome()"><a href="#">Home</a></li>
+                    <li id="btn1" onclick="openServices()"><a href="#">Services</a></li>
+                    <li id="btn2" onclick="openAboutUs()"><a href="#">About Us</a></li>
+                    <li id="btn3" onclick="openContactUs()"><a href="#">Contact Us</a></li>
+                    <li id="btn4" onclick="openSupport()"><a href="#">Support</a></li>
+                </ul>
+
+                <ul class="right-menu">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-phone-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openContactUs()">
+                            <p>+254 705 172 127</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        <div id="content0" class="container tab">
+            <!-- Showcase -->
+            <header class="showcase">
+                <h2>Luanda Security and Courier Services</h2>
+                <p>
+                    "Security at its Best"
+                </p>
+                <a href="#" onclick="toggle()" class="btn">
+                    Book Us <i class="fas fa-chevron-right"></i>
+                </a>
+            </header>
+            <div id="popup">
+                <img src="img/logo.jpg" alt="Luanda Security" class="logo">
+                <h2 class="w3-center"><b>Contact Us</b></h2>
+                <p>Leave your contact and we will get back to you</p>
+
+                <!-- Start Contact Section -->
+                <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+                    <div class="w3-content" style="max-width:600px">
+                    
+                
+                    <script type="text/javascript">var submitted=false;</script>
+                    
+                    <!--Update the URL for thank you page on form submit -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                    onload="if(submitted) {window.location='./index.html';}"></iframe> 
+                    
+                    <!-- Update the Google forms URL in action-->
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf1G8wVMteL6zNKLSk7Gb7E_02dfxy7YCIl1nzdWJBBWMWBCw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+                
+                        
+                        <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.288591985">
+                        </div>
+                        <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.416812900">
+                        </div>
+                        <div class="w3-section">
+                        <label>Phone</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.997023344">
+                        </div>
+                
+                        <div class="w3-section">
+                            <a href="#">
+                                <button class="button" type="submit">SEND <i class="fas fa-chevron-right"></i></button>
+                            </a>
+                            <a href="#" onclick="toggle()">
+                                <button class="button">CLOSE <i class="fas fa-window-close"></i></button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                <!-- End Contact Section --> 
+
+                
+            </div>
+
+            <!-- Home Cards 1 -->
+            <div class="container" id="blur">
+            <section class="home-cards">
+                <div>
+                    <img src="img/card1.png" alt="">
+                    <h3>Watchmen</h3>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <a href="#" onclick="openServices()">Learn More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <img src="img/card2.png" alt="">
+                    <h3>Our Locations</h3>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <a href="#" onclick="openContactUs()">Learn More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <img src="img/card3.png" alt="">
+                    <h3>Equipment</h3>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <a href="#" onclick="openServices()">Learn More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div>
+                    <img src="img/card4.png" alt="">
+                    <h3>Experience</h3>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <a href="#" onclick="openAboutUs()">Learn More <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </section>
+            </div>
+
+            <!-- Establishment -->
+            <section class="establishment">
+                <div class="content">
+                    <h2>Our Establishment</h2>
+                    <p>We are a well established security company registered in the Republic of Kenya under the name Luanda Security and Courier Services...</p>
+                    <a href="#" onclick="openServices()" class="btn">
+                        More about our Establishment <i class="fas fa-chevron-right"></i></a>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletter">
+                <div class="content">
+                    <h2>Subscribe to our newsletter</h2>
+                    <p>Get news about company updates and offers</p>
+                    <a href="#" onclick="openContactUs()" class="btn">
+                        Subscribe <i class="fas fa-chevron-right"></i></a>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Follow -->
+            <section class="follow">
+                <p>Follow Luanda Security</p>
+                <a href="#">
+                    <img src="./img/social-fb.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="./img/social-twitter.png" alt="Twitter">
+                </a>
+                <a href="#">
+                    <img src="./img/social-linkedin.png" alt="Linkedin">
+                </a>
+            </section>
+        </div>
+    </div>
+    <div class="conainer">
+        <div id="content1" class="container tab">
+            <p>Services works!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="content2" class="container tab">
+            <div class="wrapper">
+                <h2>Our Team</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                <div class="team">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="./img/Ppic.jpg" alt="">
+                        </div>
+                        <h3>Lt Col (Rtd) Okoba Kweya</h3>
+                        <p class="role">Director</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="./img/Ppic.jpg" alt="">
+                        </div>
+                        <h3>Mr. Musa Mbalanya</h3>
+                        <p class="role">Director</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="./img/Ppic.jpg" alt="">
+                        </div>
+                        <h3>Mr. Gaulkey </h3>
+                        <p class="role">Director</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="./img/Ppic.jpg" alt="">
+                        </div>
+                        <h3>Mr. Gaulkey </h3>
+                        <p class="role">Director</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="content3" class="container tab">
+            <section class="contact">
+                <div class="contact-content">
+                    <h2>Contact Us</h2>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>Head Office<br>
+                                P.O. Box 464 - 50307<br>
+                                Luanda
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>+254 705 172 127<br>
+                                    +254 202 596 769
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>sluanda8@gmail.com<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form action="">
+                            <h2>Talk to us</h2>
+                            <div class="inputBox">
+                                <input type="text" name="" required>
+                                <span>Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="" required>
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea required></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="accordion-section">
+        <div class="container">
+            <div id="content4" class="container tab">
+                <div class="accordion-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="accordion-tab">
+                    <input id="toggle2" type="checkbox" class="accordion-toggle" name="toggle" />
+                    <label for="toggle2">Are your watchmen trained?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-tab">
+                        <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" />
+                        <label for="toggle1">Do you accept cheques?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-tab">
+                        <input id="toggle3" type="checkbox" class="accordion-toggle" name="toggle" />
+                        <label for="toggle3">How can I become a watchman?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-tab">
+                        <input id="toggle4" type="checkbox" class="accordion-toggle" name="toggle" />
+                        <label for="toggle4">Can I get your services oustside Luanda borders?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-tab">
+                        <input id="toggle5" type="checkbox" class="accordion-toggle" name="toggle" />
+                        <label for="toggle5">When I request for your services, How do you know how many watchmen to assign me?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-tab">
+                        <input id="toggle6" type="checkbox" class="accordion-toggle" name="toggle" />
+                        <label for="toggle6">Will I provide the watchnen with the required instruments of work?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-tab">
+                        <input id="toggle7" type="checkbox" class="accordion-toggle" name="toggle" />
+                        <label for="toggle7">How many days of the week do you offer your services?</label>
+                    <div class="accordion-content">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div><i class="fas fa-globe fa-2x"></i> English </div>
+            <ul>
+                <li><a href="#">Sitemap</a></li>
+                <li onclick="openContactUs()"><a href="#">Contact Luanda Security</a></li>
+                <li><a href="#">Privacy and Cookies</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Trademarks</a></li>
+                <li onclick="openAboutUs()"><a href="#">About Us</a></li>
+                <li><a href="#">&copy; Luanda Security and Courier Services 2020</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var content0 = document.getElementById("content0");
+    var content1 = document.getElementById("content1");
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+    var content4 = document.getElementById("content4");
+    var btn0 = document.getElementById("btn0");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+
+    function openHome() {
+        content0.style.transform = "translateX(0)";
+        content1.style.transform = "translateX(-150%)";
+        content2.style.transform = "translateX(-150%)";
+        content3.style.transform = "translateX(-150%)";
+        content4.style.transform = "translateX(-150%)";
+        btn0.style.borderBottom = "2px solid #262626";
+        btn1.style.borderBottom = "none";
+        btn2.style.borderBottom = "none";
+        btn3.style.borderBottom = "none";
+        btn4.style.borderBottom = "none";
+        content0.style.transitionDelay = ".1s";
+        content1.style.transitionDelay = "0";
+        content2.style.transitionDelay = "0";
+        content3.style.transitionDelay = "0";
+        content4.style.transitionDelay = "0";
+    }
+    function openServices() {
+        content0.style.transform = "translateX(-150%)";
+        content1.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(-150%)";
+        content3.style.transform = "translateX(-150%)";
+        content4.style.transform = "translateX(-150%)";
+        btn1.style.borderBottom = "2px solid #262626";
+        btn0.style.borderBottom = "none";
+        btn2.style.borderBottom = "none";
+        btn3.style.borderBottom = "none";
+        btn4.style.borderBottom = "none";
+        content1.style.transitionDelay = ".1s";
+        content0.style.transitionDelay = "0";
+        content2.style.transitionDelay = "0";
+        content3.style.transitionDelay = "0";
+        content4.style.transitionDelay = "0";
+    }
+    function openAboutUs() {
+        content0.style.transform = "translateX(-150%)";
+        content1.style.transform = "translateX(-150%)";
+        content2.style.transform = "translateX(0)";
+        content3.style.transform = "translateX(-150%)";
+        content4.style.transform = "translateX(-150%)";
+        btn2.style.borderBottom = "2px solid #262626";
+        btn1.style.borderBottom = "none";
+        btn0.style.borderBottom = "none";
+        btn3.style.borderBottom = "none";
+        btn4.style.borderBottom = "none";
+        content2.style.transitionDelay = ".1s";
+        content1.style.transitionDelay = "0";
+        content0.style.transitionDelay = "0";
+        content3.style.transitionDelay = "0";
+        content4.style.transitionDelay = "0";
+    }
+    function openContactUs() {
+        content0.style.transform = "translateX(-150%)";
+        content1.style.transform = "translateX(-150%)";
+        content2.style.transform = "translateX(-150%)";
+        content3.style.transform = "translateX(0)";
+        content4.style.transform = "translateX(-150%)";
+        btn3.style.borderBottom = "2px solid #262626";
+        btn1.style.borderBottom = "none";
+        btn2.style.borderBottom = "none";
+        btn0.style.borderBottom = "none";
+        btn4.style.borderBottom = "none";
+        content3.style.transitionDelay = ".1s";
+        content1.style.transitionDelay = "0";
+        content2.style.transitionDelay = "0";
+        content0.style.transitionDelay = "0";
+        content4.style.transitionDelay = "0";
+    }
+    function openSupport() {
+        content0.style.transform = "translateX(-150%)";
+        content1.style.transform = "translateX(-150%)";
+        content2.style.transform = "translateX(-150%)";
+        content3.style.transform = "translateX(-150%)";
+        content4.style.transform = "translateX(0)";
+        btn4.style.borderBottom = "2px solid #262626";
+        btn1.style.borderBottom = "none";
+        btn2.style.borderBottom = "none";
+        btn3.style.borderBottom = "none";
+        btn0.style.borderBottom = "none";
+        content4.style.transitionDelay = ".1s";
+        content1.style.transitionDelay = "0";
+        content2.style.transitionDelay = "0";
+        content3.style.transitionDelay = "0";
+        content0.style.transitionDelay = "0";
+    }
+</script>
+
+<script>
+    document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+</script>
+<script type="text/javascript">
+    function toggle() {
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+    }
+</script>
+<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+                alert("Name can't be blank") ;
+                return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                alert("Please enter your correct name") ;//Validation Message
+                return false;
+            }
+            return true;
+            }
+
+            function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+                alert("Phone number can't be blank") ;//Validation Message
+                return false;
+            }
+
+            if(!phone.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)) {
+                alert("Please enter a correct phone number") ;//Validation Message
+                return false;
+            }
+
+            return true;
+
+            }
+
+            function validateEmail () {
+
+            var email = document.getElementById('email').value;
+            if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+            }
+
+            if(!email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+            }
+
+            return true;
+
+    }
+
+
+        function validateForm() {
+            if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+            }
+            else {
+            submitted=true;
+            return true;
+            }
+        }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".button").click(function(){
+        $(this).addClass("active");
+
+        setTimeout(function(){
+            $(".button").addClass("success");
+        }, 3700);
+        setTimeout(function(){
+            $(".button").removeClass("active");
+            $(".button").removeClass("success");
+        }, 5000);
+    });
+});
+</script>
+</html>
