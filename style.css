@@ -507,7 +507,7 @@ ul {
 
 .accordion-section .container {
     padding-top: 4rem;
-    max-width: 70%;
+    max-width: 90%;
     align-items: center;
     justify-content: center;
 }
@@ -646,6 +646,27 @@ ul {
     padding: 10px;
 }
 
+.services {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.services h3 {
+    padding-top: 40px;
+}
+
+.services h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.services ul {
+    list-style: disc;
+    margin: 30px;
+}
+
 
 @media(max-width: 700px) {
     .menu-btn {
@@ -729,7 +750,7 @@ ul {
     }
 
     .contact {
-        padding: 50px;
+        padding: 0px;
     }
 
     .contact .container {
@@ -737,6 +758,8 @@ ul {
     }
 
     .contact .contactInfo {
+        margin: 0;
+        padding: 0;
         margin-bottom: 40px;
     }
 
@@ -746,7 +769,7 @@ ul {
     }
 
     .accordion-section .container {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     #popup {
@@ -781,6 +804,40 @@ ul {
 
     .team .team-member h3 {
         margin-top: 50px;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .contact .container .contactInfo .box {
+        position: relative;
+        padding: 0;
+        display: flex;
+    }
+    
+    .contact .container .contactInfo .box .icon {
+        min-width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+    
+    .contact .container .contactInfo .box .text {
+        display: flex;
+        margin-left: 10px;
+        font-size: 14px;
+        flex-direction: column;
+        font-weight: 300;
+    }
+
+    .contact .container .contactInfo {
+        width: 100%;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 150px;
     }
 
 }
