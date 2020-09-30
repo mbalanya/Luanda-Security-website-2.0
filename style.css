@@ -148,11 +148,20 @@ ul {
 }
 
 
-.showcase h2, .showcase p {
+.showcase h2 {
     margin-bottom: 10px;
     color: #262626;
     font-size: x-large;
     text-shadow: #000;
+    font-weight: 700;
+}
+
+.showcase p {
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: large;
+    text-shadow: #000;
+    font-weight: 700;
 }
 
 .showcase a:hover i {
@@ -718,11 +727,7 @@ ul {
     .main-nav ul.main-menu.show {
         transform: translateX(-20px);
     }
-
-    .showcase h2, .showcase p {
-        font-size: large;
-    }
-
+    
     .home-cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -810,6 +815,14 @@ ul {
         padding: 0;
     }
 
+    .wrapper #content2{
+        padding: 0;
+    }
+
+    .wrapper p{
+        padding: 0;
+    }
+
     .contact .container .contactInfo .box {
         position: relative;
         padding: 0;
@@ -838,6 +851,27 @@ ul {
         width: 100%;
         padding: 20px;
         margin-bottom: 150px;
+    }
+
+    .button {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        border: 1px solid #000;
+        color: #000;
+        font-size: 14px;
+        line-height: 16px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: none;
+    }
+
+    #popup {
+        top: 15%;
+        left: 50%;
+        width: 100%;
+        padding: 20px;
     }
 
 }
